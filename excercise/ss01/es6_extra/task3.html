@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let sv1 = {
+    firstName: 'John',
+    gender: 'male',
+    english: 'English'
+  };
+
+    let sv2 = {
+    name: 'John',
+    gender: 'male',
+    degree: 'Bachelor',
+    english: 'English'
+  };
+
+    let getInfo = (object) => {
+    if (!object.hasOwnProperty('firstName')){
+    object.firstName = 'Quân';
+  }
+    if (!object.hasOwnProperty('degree')){
+    object.degree = 'NA';
+  }
+    console.log(object);
+  }
+
+    getInfo(sv1);
+    console.log(sv1);
+    getInfo(sv2);
+    console.log(sv2);
+
+</script>
+</body>
+</html>
