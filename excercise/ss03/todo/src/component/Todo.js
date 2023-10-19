@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import {render} from "@testing-library/react";
 class Todo extends Component {
     constructor(props) {
         super(props);
@@ -31,14 +30,17 @@ class Todo extends Component {
         return (
             <>
                 <table>
-                    <tbody>
+                    <thead>
                     <tr>
-                        {this.state.list.map = (list => (
-                            <tr>
-                                {list}
-                            </tr>
-                        ))}
+                        <td>List Text</td>
                     </tr>
+                    </thead>
+                    <tbody>
+                    {this.state.list.map((list, index) =>(
+                        <tr key={index}>
+                            <td>{list}</td>
+                        </tr>
+                    ))}
                     </tbody>
                 </table>
 

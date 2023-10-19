@@ -14,13 +14,15 @@ function App() {
         <>
             <h1>Student List</h1>
             <table>
-                <tbody>
+                <thead>
                 <tr>
                     <th>#</th>
                     <th>Name</th>
                     <th>Age</th>
                     <th>Address</th>
                 </tr>
+                </thead>
+                <tbody>
                 {studentList.map((e, index) => {
                     return (
                         <tr key={e.id}>
