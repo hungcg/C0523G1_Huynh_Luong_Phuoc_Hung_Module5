@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-function Counter1(){
+function Counter1() {
     let [count, setCount] = useState(0);
     const handleClick = () => {
         const newValue = count + 1;
@@ -15,6 +15,6 @@ function Counter1(){
             </div>
         </div>
     );
-
 }
+
 export default Counter1

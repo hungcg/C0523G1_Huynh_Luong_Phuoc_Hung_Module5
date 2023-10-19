@@ -1,12 +1,11 @@
 import {useState} from "react";
 
-function Counter2(){
+function Counter2() {
     let [count, setCount] = useState(0);
     const handleClick = () => {
         const newValue = count + 2;
         setCount(newValue);
     };
-
     return (
         <div>
             Value {count}
@@ -15,6 +14,6 @@ function Counter2(){
             </div>
         </div>
     );
-
 }
+
 export default Counter2
