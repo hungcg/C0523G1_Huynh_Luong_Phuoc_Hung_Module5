@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d282dcc-7d2d-43be-9a49-16710d6d9f88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/case_study/src/image/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/image/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/src/components/css/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss04/counter/src/components/Counter1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss04/counter/src/components/Counter2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/src/components/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/body.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study1/image/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study1/image/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss02/student_list/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss02/student_list/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss03/student_list/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss03/student_list/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss03/todo/src/component/Todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss03/todo/src/component/Todo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -39,21 +41,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/C0523G1_Huynh_Luong_Phuoc_Hung_Module5/excercise/case_study/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/C0523G1_Huynh_Luong_Phuoc_Hung_Module5/excercise/case_study/src",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\C0523G1_Huynh_Luong_Phuoc_Hung_Module5\excercise\case_study\src" />
@@ -79,7 +82,7 @@
       <updated>1697611495801</updated>
       <workItem from="1697611496957" duration="10576000" />
       <workItem from="1697678007255" duration="5307000" />
-      <workItem from="1697689523502" duration="971000" />
+      <workItem from="1697689523502" duration="12016000" />
     </task>
     <servers />
   </component>
