@@ -1,133 +1,75 @@
 import {render} from "@testing-library/react";
 import React from "react";
+import * as villaService from "../service/villa/villa_service"
+import * as houseService from "../service/house/house_service"
+import * as roomService from "../service/room/room_service"
 
 function body() {
     return (
         <>
-            <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
-                <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            className="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                </div>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src="https://www.themulia.com/assets/image_gallery/og-image-homepage-themulia.jpeg"
-                             className="d-block w-100" alt="..."/>
-                    </div>
-                    <div className="carousel-item">
-                        <img src="https://muliaweddings.com/assets/slider/2/2147.jpg" className="d-block w-100"
-                             alt="..."/>
-                    </div>
-                    <div className="carousel-item">
-                        <img
-                            src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1920,h_1080,f_auto/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/t4ftiqwogmadgdjobkfk/Tr%E1%BA%A3iNghi%E1%BB%87m%C4%82nU%E1%BB%91ngEpicureanT%E1%BA%A1iTheMuliaResortNusaDuaBali-KlookVi%E1%BB%87tNam.jpg"
-                            className="d-block w-100" alt="..."/>
-                    </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
-            <div id="facility" className="content container">
-                <div className="card">
-                    <img
-                        src="https://cdn.tatlerasia.com/tatlerasia/i/2023/03/02124303-underwatersuite-interior-underwatersuitebedroom_cover_1600x1100.jpeg"
-                        className="card-img-top"
-                        alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">OCEAN SUITE</h5>
-                            <p className="card-text">Room size : 85.8 m2</p>
+            <div style={{marginTop: "100px"}} className="container">
+                <div className="content row">
+                    {villaService.findAll().map(facility => (
+                        <div className="container col-3" key={facility.id}>
+                            <div className="card">
+                                <img src={facility.img}
+                                     className="card-img-top"
+                                     alt="..."/>
+                                <div className="card1-body">
+                                    <h5 className="card1-title">{facility.title}</h5>
+                                    <p className="card1-text">Room size : {facility.size} m<sup>2</sup></p>
+                                </div>
+                                <div className="d-flex">
+                                    <div >
+                                        <button className="edit-button">
+                                            <svg className="edit-svgIcon" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                <div>
+                                    <button className="delete-button">
+                                        <svg className="delete-svgIcon" viewBox="0 0 448 512">
+                                            <path
+                                                d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                </div>
+                            </div>
                         </div>
+                    ))}
                 </div>
-
-                <div className="card">
-                    <img
-                        src="https://ocean-resort-casino-atlantic-city.hotelmix.vn/data/Photos/OriginalPhoto/10195/1019541/1019541880/Ocean-Casino-Resort-Atlantic-City-Exterior.JPEG"
-                        className="card-img-top"
-                        alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">OCEAN STUDIO SUTIE</h5>
-                            <p className="card-text">Room size : 40.1 m2</p>
+                <div className="content row">
+                    {houseService.findAll().map(facility => (
+                        <div className="container col-3" key={facility.id}>
+                            <div className="card">
+                                <img src={facility.img}
+                                     className="card-img-top"
+                                     alt="..."/>
+                                <div className="card-body">
+                                    <h5 className="card-title">{facility.title}</h5>
+                                    <p className="card-text">Room size : {facility.size} m<sup>2</sup></p>
+                                </div>
+                            </div>
                         </div>
+                    ))}
                 </div>
-
-                <div className="card">
-                    <img
-                        src="https://sitecore-cd-imgr.shangri-la.com/MediaFiles/4/7/4/%7B47427327-C69C-4473-9AFC-4A65BC011938%7D191210_FIJ_Ocean_Deluxe_Room1.jpg"
-                        className="card-img-top"
-                        alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">OCEAN DELUXE</h5>
-                            <p className="card-text">Room size : 43.7 m2</p>
+                <div className="content row">
+                    {roomService.findAll().map(facility => (
+                        <div className="container col-3" key={facility.id}>
+                            <div className="card">
+                                <img src={facility.img}
+                                     className="card-img-top"
+                                     alt="..."/>
+                                <div className="card-body">
+                                    <h5 className="card-title">{facility.title}</h5>
+                                    <p className="card-text">Room size : {facility.size} m<sup>2</sup></p>
+                                </div>
+                            </div>
                         </div>
-                </div>
-
-                <div className="card">
-                    <img
-                        src="https://www.discoverasr.com/content/dam/tal/media/images/properties/indonesia/bogor/the-botanica-sanctuary-bogor/apartmenttypes/the-botanica-suite/MBCK-Booking-BotanicaSuite3.jpg.transform/cap-lowres/image.jpg"
-                        className="card-img-top"
-                        alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">GARDEN DELUXE</h5>
-                            <p className="card-text">Room size : 40.1 m2</p>
-                        </div>
-                </div>
-            </div>
-
-            <div className="content container">
-                <div className="card">
-                    <img
-                        src="https://cdn.tcdulichtphcm.vn/upload/2-2022/images/2022-05-25/image1-1653442950-402-width734height768.jpg"
-                        className="card-img-top"
-                        alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">PRESIDENTIAL SUITE</h5>
-                            <p className="card-text">Room size : 85.8 m2</p>
-                        </div>
-                </div>
-
-                <div className="card">
-                    <img
-                        src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/209/2021/04/14051350/PullmanMaldivesMaamutaa_FamilyBeachVillaWithPool_Sala_Exterior-_4332-1024x683.jpg"
-                        className="card-img-top"
-                        alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">BEACH VILA</h5>
-                            <p className="card-text">Room size : 40.1 m2</p>
-                        </div>
-                </div>
-
-                <div className="card">
-                    <img src="https://furaveri.com/wp-content/uploads/2022/04/OceanPoolVilla_Sunset_Deck_2.jpg"
-                         className="card-img-top"
-                         alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">POOL VILLAS</h5>
-                            <p className="card-text">Room size : 43.7 m2</p>
-                        </div>
-                </div>
-
-                <div className="card">
-                    <img
-                        src="https://hotels-attitude.com/medias/1623332133_attitude-hotel-lagoon-mauritius-room-couple-seafront-618x440.jpg"
-                        className="card-img-top"
-                        alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">LAGOON SUPERIOR</h5>
-                            <p className="card-text">Room size : 40.1 m2</p>
-                        </div>
+                    ))}
                 </div>
             </div>
         </>

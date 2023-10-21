@@ -1,0 +1,74 @@
+nav {
+    width: 100%;
+    background-image: repeating-radial-gradient(  #0c0a0a 80%,#2f312f 90%,#3f4549 90%);
+    background-size: 65px 65px;
+    height: 80px;
+}
+#gridbutton{
+    display:grid;
+    grid-template-columns: 10fr 5fr 5fr 5fr;
+}
+#gridbutton div{
+    color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#gridbutton div:hover {
+    cursor: pointer;
+    color: #efc078;
+}
+
+nav img {
+    height: 60px;
+}
+
+/* === removing default button style ===*/
+.button {
+    margin: 0 20px;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* button styling */
+.button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #efc078;
+    --fs-size: 0,5em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+

@@ -8,10 +8,6 @@ function footer() {
                     </svg>
                 </a>
                 <span className="mb-3 mb-md-0 text-muted">© 2023 Hưng Haha</span>
-                <p className="mb-3 mb-md-0">
-                    103 – 105 Đường Võ Nguyên Giáp, Phường Khuê Mỹ, Quận Ngũ hành Sơn, Tp. Đà Nẵng, Việt Nam
-
-                    7.0 km từ Sân bay Quốc tế Đà Nẵng</p>
             </div>
         </footer>
     )
