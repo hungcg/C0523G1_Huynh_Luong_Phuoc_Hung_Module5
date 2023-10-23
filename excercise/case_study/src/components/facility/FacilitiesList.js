@@ -2,9 +2,10 @@ import React from "react";
 import * as villaService from "../../service/villa/villa_service";
 import * as houseService from "../../service/house/house_service";
 import * as roomService from "../../service/room/room_service";
-function facilitiesList(){
+function FacilitiesList(){
     return(
         <>
+            <h1>aaaa</h1>
             <div style={{marginTop: "100px"}} className="container">
                 <div className="content row">
                     {villaService.findAll().map(facility => (
@@ -55,4 +56,4 @@ function facilitiesList(){
         </>
     )
 }
-export default facilitiesList()
+export default FacilitiesList()

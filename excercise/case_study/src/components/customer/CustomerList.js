@@ -4,18 +4,18 @@ function customerList() {
     return (
         <>
             <!-- MAIN CONTENT-->
-            <div class="main-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2 class="title-1 m-b-25 justi fy-content-center d-flex"
+            <div className="main-content">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <h2 className="title-1 m-b-25 justi fy-content-center d-flex"
                                 style="color: #0c0c0c; margin-bottom: 0">
                                 Customer List</h2>
-                            <a class="btn btn-outline-light" href="/cam-ket-them-moi.jsp" style="color: black">
-                                <i class="fas fa-plus"></i>
+                            <a className="btn btn-outline-light">
+                                <i className="fas fa-plus"></i>
                             </a>
-                            <div class="table-responsive table--no-card m-b-40">
-                                <table id="bang" class="table table-borderless table-striped table-earning">
+                            <div className="table-responsive table--no-card m-b-40">
+                                <table id="bang" className="table table-borderless table-striped table-earning">
                                     <thead>
                                     <tr>
                                         <th>#</th>
