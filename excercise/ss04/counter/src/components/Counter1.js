@@ -1,17 +1,14 @@
 import {useState} from "react";
+import useCounter from "./Counter";
 
 function Counter1() {
-    let [count, setCount] = useState(0);
-    const handleClick = () => {
-        const newValue = count + 1;
-        setCount(newValue);
-    };
+    const [count, setCount] = useCounter(0);
 
     return (
         <div>
             Value {count}
             <div>
-                <button onClick={handleClick}>InCrease</button>
+                <button onClick={()=>setCount(1)}>InCrease</button>
             </div>
         </div>
     );

@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d282dcc-7d2d-43be-9a49-16710d6d9f88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/src/css/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss04/counter/src/components/Counter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/contract/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/contract/ContractList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/customer/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/customer/CustomerList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/facility/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss04/counter/src/components/Counter1.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss04/counter/src/components/Counter1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss04/counter/src/components/Counter2.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss04/counter/src/components/Counter2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,7 @@
       <workItem from="1697802256768" duration="9753000" />
       <workItem from="1697852612016" duration="9876000" />
       <workItem from="1698023786595" duration="4025000" />
-      <workItem from="1698027876910" duration="4048000" />
+      <workItem from="1698027876910" duration="6947000" />
     </task>
     <servers />
   </component>
