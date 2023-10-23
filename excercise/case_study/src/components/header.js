@@ -13,19 +13,24 @@ function header() {
                 </a>
                 <div id="gridbutton">
                     <div></div>
-                     <Link className="nav-link" to="/">
                     <button className="button" data-text="Awesome">
+                        <Link to="/facility" className="nav-link">
                         <span className="actual-text">&nbsp;Facilities&nbsp;</span>
                         <span aria-hidden="true" className="hover-text">&nbsp;Facilities&nbsp;</span>
+                        </Link>
                     </button>
-                     </Link>
                     <button className="button" data-text="Awesome">
+                         <Link to="/customer" className="nav-link">
                         <span className="actual-text">&nbsp;Customer&nbsp;</span>
                         <span aria-hidden="true" className="hover-text">&nbsp;Customer&nbsp;</span>
+                              </Link>
                     </button>
+
                     <button className="button" data-text="Awesome">
+                        <Link to="/contract" className="nav-link">
                         <span className="actual-text">&nbsp;Contract&nbsp;</span>
                         <span aria-hidden="true" className="hover-text">&nbsp;Contract&nbsp;</span>
+                         </Link>
                     </button>
                 </div>
             </span>

@@ -1,15 +1,13 @@
 import React from "react";
 
-function customerList() {
+export function CustomerList() {
     return (
         <>
-            <!-- MAIN CONTENT-->
             <div className="main-content">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <h2 className="title-1 m-b-25 justi fy-content-center d-flex"
-                                style="color: #0c0c0c; margin-bottom: 0">
+                            <h2 className="title-1 m-b-25 justi fy-content-center d-flex">
                                 Customer List</h2>
                             <a className="btn btn-outline-light">
                                 <i className="fas fa-plus"></i>

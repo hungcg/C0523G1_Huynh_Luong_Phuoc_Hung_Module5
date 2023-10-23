@@ -5,25 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d282dcc-7d2d-43be-9a49-16710d6d9f88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/case_study/src/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/service/contract/contract_service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/service/customer/customer_service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/service/house/house_service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/service/room/room_service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/service/villa/villa_service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesCreate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_demo/furama.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_demo/furama.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_demo/image/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/css/body.css" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/css/body.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/css/header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/facility/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/facility/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/src/components/contract/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/contract/ContractList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/src/components/customer/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/customer/CustomerList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/src/components/facility/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/src/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,23 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/demo/bạn nhỏ Dương.html",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/demo/bạn nhỏ Dương.html&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\C0523G1_Huynh_Luong_Phuoc_Hung_Module5\excercise\case_study\src\service\contract" />
@@ -104,7 +93,9 @@
       <workItem from="1697689523502" duration="12175000" />
       <workItem from="1697764786563" duration="16426000" />
       <workItem from="1697802256768" duration="9753000" />
-      <workItem from="1697852612016" duration="9697000" />
+      <workItem from="1697852612016" duration="9876000" />
+      <workItem from="1698023786595" duration="4025000" />
+      <workItem from="1698027876910" duration="4048000" />
     </task>
     <servers />
   </component>
