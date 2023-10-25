@@ -11,9 +11,33 @@ export const findAll = async()=>{
 export const createCustomer = async(value)=>{
     try{
         let response =await  axios.post("http://localhost:8080/customer",value)
-        return response.data;
+        return response.status;
     }catch (e) {
 
+    }
+}
+export const findCustomerById = async (customerId) => {
+    try {
+        const response = await axios.get(`http://localhost:8080/customer/${customerId}`);
+        return response.data
+    } catch (e) {
+        alert("Access Denied")
+    }
+}
+export const editCustomer = async (data) => {
+    try {
+        const response = await axios.put(`http://localhost:8080/customer/${data.id}`,data);
+        return response
+    } catch (e) {
+        alert("Access Denied")
+    }
+}
+export const deleteCustomer = async (id) => {
+    try {
+        const response = await axios.delete(`http://localhost:8080/customer/${id}`)
+        return response;
+    } catch (e) {
+        alert("Delete fail");
     }
 }
 

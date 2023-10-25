@@ -1,37 +1,49 @@
-import {Link, useNavigate} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 import {ErrorMessage, Field, Form, Formik} from "formik";
 import * as customerService from "../../service/customer/customer_service"
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import * as Yup from "yup";
+import {useEffect, useState} from "react";
 
-export function CustomerCreate() {
+export function CustomerEdit() {
     const navigate = useNavigate();
-    const createCustomer = async (data) => {
-        console.log("OK")
-        const status = await customerService.createCustomer(data)
-        console.log(status)
-        if (status === 201) {
-            navigate("/customer")
-            toast.success("Create oke");
-        } else {
-            toast.error("Create fail")
-        }
+    const {id} = useParams();
+    const [customer, setCustomer] = useState()
+    const findCustomerById = async () => {
+        const res = await customerService.findCustomerById(id)
+        res.gender = res.gender + ""
+        setCustomer(res)
     }
 
+    const editCustomer = async (data) => {
+        console.log("OK")
+        const status = await customerService.editCustomer(data)
+        console.log(status)
+        if (status.status === 200) {
+            navigate("/customer")
+            toast.success("Edit oke");
+        } else {
+            toast.error("Edit fail")
+        }
+    }
+    useEffect(() => {
+        findCustomerById()
+    }, [id])
+
+    if (!customer) {
+        return null;
+    }
+    const initialValues = {
+        ...customer
+    }
 
     return (
         <>
-            <Formik initialValues={{
-                name: "",
-                dateOfBirth: "",
-                idCard: "",
-                phoneNumber: "",
-                email: "",
-                type: "",
-                address: ""
-            }} onSubmit={(values) => {
-                createCustomer(values)
+            <Formik initialValues={
+                initialValues
+            } onSubmit={(values) => {
+                editCustomer(values)
             }} validationSchema={Yup.object({
                 name: Yup.string()
                     .required("Not Empty")
@@ -50,8 +62,7 @@ export function CustomerCreate() {
                 email: Yup.string()
                     .required("Email is required")
                     .matches(/^[\w\-.]+@([\w-]+\.)+[\w-]{2,}$/, "Invalid email address"),
-            })}
-            >
+            })}>
                 <Form className="container" style={{marginTop: "120px"}}>
                     <div className="row">
                         <div className="col-md-6">

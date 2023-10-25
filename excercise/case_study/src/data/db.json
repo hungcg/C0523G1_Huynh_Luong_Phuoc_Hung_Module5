@@ -3,10 +3,10 @@
     {
       "id": 1,
       "code": "BK-001",
-      "startDate": "22-01-2002",
-      "finishDate": "22-01-2002",
-      "deposit": "2.000.000",
-      "total": "5.000.000"
+      "startDate": "2023-10-21",
+      "finishDate": "2023-10-10",
+      "deposit": 2000000,
+      "total": 2500000000
     },
     {
       "id": 2,
@@ -35,44 +35,48 @@
   ],
   "customer": [
     {
-      "id": 1,
-      "name": "Messi",
-      "dateOfBirth": "01-01-1987",
-      "idCard": "0309432390",
-      "phoneNumber": "09059996868",
-      "email": "ronaldo@gmail.com",
-      "type": "Premium",
-      "address": "Argentina"
+      "name": "Leonel Messi",
+      "dateOfBirth": "2002-01-25",
+      "idCard": "12345467889",
+      "phoneNumber": "0905678789",
+      "email": "lamga@gmail.com",
+      "type": "Diamond",
+      "address": "Argentina",
+      "gender": "Male",
+      "id": 14
     },
     {
-      "id": 2,
-      "name": "Messi",
-      "dateOfBirth": "01-01-1987",
-      "idCard": "0309432390",
-      "phoneNumber": "09059996868",
-      "email": "ronaldo@gmail.com",
-      "type": "Premium",
-      "address": "Argentina"
+      "name": "Fernando Torres",
+      "dateOfBirth": "2002-01-25",
+      "idCard": "12345467889",
+      "phoneNumber": "0905678789",
+      "email": "lamga@gmail.com",
+      "type": "Diamond",
+      "address": "Spain",
+      "gender": "Male",
+      "id": 15
     },
     {
-      "id": 3,
-      "name": "Messi",
-      "dateOfBirth": "01-01-1987",
-      "idCard": "0309432390",
-      "phoneNumber": "09059996868",
-      "email": "ronaldo@gmail.com",
-      "type": "Premium",
-      "address": "Argentina"
+      "name": "Harry Maguire",
+      "dateOfBirth": "1999-10-03",
+      "idCard": "12345467889",
+      "phoneNumber": "0905678789",
+      "email": "hanhhue@gmail.com",
+      "type": "Diamond",
+      "address": "EngLand",
+      "gender": "Female",
+      "id": 16
     },
     {
-      "id": 4,
-      "name": "Messi",
-      "dateOfBirth": "01-01-1987",
-      "idCard": "0309432390",
-      "phoneNumber": "09059996868",
-      "email": "ronaldo@gmail.com",
-      "type": "Premium",
-      "address": "Argentina"
+      "name": "Cristiano Ronaldo",
+      "dateOfBirth": "1985-10-11",
+      "idCard": "12345467889",
+      "phoneNumber": "0905678789",
+      "email": "lamga@gmail.com",
+      "type": "Platinum",
+      "address": "Portugal",
+      "gender": "Male",
+      "id": 17
     }
   ],
   "house": [

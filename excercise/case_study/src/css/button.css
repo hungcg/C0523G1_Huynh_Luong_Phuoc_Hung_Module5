@@ -33,7 +33,7 @@
     justify-content: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
     cursor: pointer;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     overflow: hidden;
     position: relative;
 }
@@ -50,7 +50,7 @@
 .delete-button:hover {
     width: 90px;
     border-radius: 50px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     background-color: #f17c78;
     align-items: center;
 }
@@ -70,7 +70,7 @@
     display: none;
     content: "Delete";
     color: white;
-    transition-duration: 2s;
+    transition-duration: 0.5s;
     font-size: 2px;
 }
 
@@ -80,12 +80,13 @@
     font-size: 13px;
     opacity: 1;
     transform: translateY(0px);
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 
 
 .edit-button {
+
     right: 20px;
     width: 40px;
     height: 40px;
@@ -98,7 +99,7 @@
     justify-content: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
     cursor: pointer;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     overflow: hidden;
     position: relative;
     text-decoration: none !important;
@@ -106,7 +107,8 @@
 
 .edit-svgIcon {
     width: 17px;
-    transition-duration:1s;
+    transition-duration:0.5s;
+
 }
 
 .edit-svgIcon path {
@@ -116,9 +118,10 @@
 .edit-button:hover {
     width: 120px;
     border-radius: 50px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     background-color: #63ccef;
     align-items: center;
+
 }
 
 .edit-button:hover .edit-svgIcon {
@@ -136,7 +139,7 @@
     display: none;
     content: "Edit";
     color: white;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     font-size: 2px;
 }
 
@@ -146,7 +149,8 @@
     font-size: 13px;
     opacity: 1;
     transform: translateY(0px);
-    transition-duration: 1s;
+    transition-duration: 0.5s;
+    text-decoration: none;
 }
 
 

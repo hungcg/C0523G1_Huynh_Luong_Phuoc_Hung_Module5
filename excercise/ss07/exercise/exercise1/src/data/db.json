@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Messi",
+      "email": "messi@gmai.com",
+      "website": "24h.com.vn"
+    },
+    {
+      "id": 2,
+      "name": "Messi",
+      "email": "messi@gmai.com",
+      "website": "24h.com.vn"
+    },{
+      "id": 3,
+      "name": "Messi",
+      "email": "messi@gmai.com",
+      "website": "24h.com.vn"
+    },{
+      "id": 4,
+      "name": "Messi",
+      "email": "messi@gmai.com",
+      "website": "24h.com.vn"
+    },{
+      "id": 5,
+      "name": "Messi",
+      "email": "messi@gmai.com",
+      "website": "24h.com.vn"
+    }
+
+  ]
+}

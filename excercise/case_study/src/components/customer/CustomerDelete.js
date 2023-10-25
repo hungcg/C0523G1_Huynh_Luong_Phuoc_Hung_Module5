@@ -1,17 +1,15 @@
-// eslint-disable-next-line no-unused-vars
-import React, {useState, useEffect} from 'react';
 
-import * as libraryService from "../service/LibraryService.jsx"
+
+import * as customerService from "../../service/customer/customer_service.js"
 import {toast} from "react-toastify";
 
-function LibraryDelete({show, handleClose, selectedBook}) {
-    const handleDelete = async (selectedBook) => {
+export function CustomerDelete({show, handleClose, selectedCustomer}) {
+    const handleDelete = async (selectedCustomer) => {
 
-        const res = await libraryService.deleteBook(selectedBook.id)
+        const res = await customerService.deleteCustomer(selectedCustomer.id)
         if (res.status === 200) {
-            toast("Delete Okay")
             handleClose()
-            window.location.reload(true)
+            toast.success("Delete Success")
         } else {
             toast.error("Delete Fail")
         }
@@ -28,14 +26,14 @@ function LibraryDelete({show, handleClose, selectedBook}) {
                                         onClick={handleClose}></button>
                             </div>
                             <div className="modal-body">
-                                <p>Do you want to delete <b>{selectedBook.title}</b></p>
+                                <p>Do you want to delete <b>{selectedCustomer.name}</b></p>
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal"
                                         onClick={handleClose}>Close
                                 </button>
                                 <button type="button" className="btn btn-primary"
-                                        onClick={() => handleDelete(selectedBook)}>Delete
+                                        onClick={() => handleDelete(selectedCustomer)}>Delete
                                 </button>
                             </div>
                         </div>
@@ -46,4 +44,4 @@ function LibraryDelete({show, handleClose, selectedBook}) {
     );
 }
 
-export default LibraryDelete;
+

@@ -7,7 +7,7 @@ import LibraryDelete from "./LibraryDelete.jsx";
 function LibraryList() {
     const [books, setBook] = useState([]);
     const [modalStatus, setModalStatus] = useState(false);
-    const [selectedBook, setSelectedBook] = useState()
+    const [selected, setSelected] = useState()
 
 
     useEffect(() => {
@@ -19,7 +19,7 @@ function LibraryList() {
     }
 
     const deleteModal = (book) => {
-        setSelectedBook(book)
+        setSelected(book)
         setModalStatus(true);
         console.log(book)
     }
@@ -61,7 +61,7 @@ function LibraryList() {
             <LibraryDelete
                 show={modalStatus}
                 handleClose={closeModal}
-                selectedBook={selectedBook}
+                selectedBook={selected}
             ></LibraryDelete>
         </>);
 }
