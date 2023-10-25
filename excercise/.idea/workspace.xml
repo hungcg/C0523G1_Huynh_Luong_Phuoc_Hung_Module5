@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d282dcc-7d2d-43be-9a49-16710d6d9f88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/customer/CustomerCreate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/css/form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/css/list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/body.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/contract/ContractList.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/contract/ContractList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/customer/CustomerList.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/customer/CustomerList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/css/body.css" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/css/button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/css/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/service/contract/contract_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/service/contract/contract_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/service/customer/customer_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/service/customer/customer_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/service/house/house_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/service/house/house_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/service/room/room_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/service/room/room_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/service/villa/villa_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/service/villa/villa_service.js" afterDir="false" />
-    </list>
+    <list default="true" id="1d282dcc-7d2d-43be-9a49-16710d6d9f88" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +87,7 @@
       <workItem from="1697852612016" duration="9876000" />
       <workItem from="1698023786595" duration="4025000" />
       <workItem from="1698027876910" duration="13239000" />
-      <workItem from="1698110364631" duration="13245000" />
+      <workItem from="1698110364631" duration="14031000" />
     </task>
     <servers />
   </component>
