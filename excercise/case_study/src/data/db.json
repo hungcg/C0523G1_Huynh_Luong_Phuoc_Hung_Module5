@@ -40,7 +40,10 @@
       "idCard": "12345467889",
       "phoneNumber": "0905678789",
       "email": "lamga@gmail.com",
-      "type": "Diamond",
+      "type": {
+        "id": 5,
+        "name": "Diamond"
+      },
       "address": "Argentina",
       "gender": "Male",
       "id": 14
@@ -51,7 +54,10 @@
       "idCard": "12345467889",
       "phoneNumber": "0905678789",
       "email": "lamga@gmail.com",
-      "type": "Diamond",
+      "type": {
+        "id": 5,
+        "name": "Diamond"
+      },
       "address": "Spain",
       "gender": "Male",
       "id": 15
@@ -62,7 +68,10 @@
       "idCard": "12345467889",
       "phoneNumber": "0905678789",
       "email": "hanhhue@gmail.com",
-      "type": "Diamond",
+      "type": {
+        "id": 5,
+        "name": "Diamond"
+      },
       "address": "EngLand",
       "gender": "Female",
       "id": 16
@@ -73,10 +82,27 @@
       "idCard": "12345467889",
       "phoneNumber": "0905678789",
       "email": "lamga@gmail.com",
-      "type": "Platinum",
+      "type": {
+        "id": 5,
+        "name": "Diamond"
+      },
       "address": "Portugal",
       "gender": "Male",
       "id": 17
+    },
+    {
+      "name": "Heineken Ha",
+      "dateOfBirth": "2023-10-04",
+      "idCard": "12345467889",
+      "phoneNumber": "0905678789",
+      "email": "lamga@gmail.com",
+      "type": {
+        "id": "4",
+        "name": "Platinum"
+      },
+      "address": "czxczxceqweqweqwe",
+      "gender": "Male",
+      "id": 19
     }
   ],
   "house": [
@@ -155,6 +181,28 @@
       "img": "https://i.pinimg.com/564x/a5/0a/a1/a50aa1979eea53a5f666dd32885892a5.jpg",
       "title": "GARDEN DELUXE",
       "size": 40.1
+    }
+  ],
+  "type": [
+    {
+      "id": "1",
+      "name": "Member"
+    },
+    {
+      "id": "2",
+      "name": "Silver"
+    },
+    {
+      "id": "3",
+      "name": "Gold"
+    },
+    {
+      "id": "4",
+      "name": "Platinum"
+    },
+    {
+      "id": "5",
+      "name": "Diamond"
     }
   ]
 }

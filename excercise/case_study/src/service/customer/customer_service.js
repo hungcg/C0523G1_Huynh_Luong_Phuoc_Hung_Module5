@@ -1,8 +1,8 @@
 import axios from "axios"
 
-export const findAll = async()=>{
+export const findAll = async(customerName,customerType)=>{
     try{
-        let response =await  axios.get("http://localhost:8080/customer")
+        let response =await  axios.get(`http://localhost:8080/customer?name_like=${customerName}&type_like=${customerType}`)
         return response.data;
     }catch (e) {
 
@@ -40,4 +40,14 @@ export const deleteCustomer = async (id) => {
         alert("Delete fail");
     }
 }
+
+export const findAllType = async()=>{
+    try{
+        let response =await  axios.get(`http://localhost:8080/type`)
+        return response.data;
+    }catch (e) {
+
+    }
+}
+
 

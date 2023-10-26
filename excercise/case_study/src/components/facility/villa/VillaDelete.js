@@ -1,11 +1,11 @@
 
-import * as customerService from "../../service/customer/customer_service.js"
+import * as villaService from "../../../service/villa/villa_service.js"
 import {toast} from "react-toastify";
 
-export function CustomerDelete({show, handleClose, selectedCustomer}) {
-    const handleDelete = async (selectedCustomer) => {
+export function VillaDelete({show, handleClose, selected}) {
+    const handleDelete = async (selected) => {
 
-        const res = await customerService.deleteCustomer(selectedCustomer.id)
+        const res = await villaService.deleteVilla(selected.id)
         if (res.status === 200) {
             handleClose()
             toast.success("Delete Success")
@@ -25,14 +25,14 @@ export function CustomerDelete({show, handleClose, selectedCustomer}) {
                                         onClick={handleClose}></button>
                             </div>
                             <div className="modal-body">
-                                <p>Do you want to delete <b>{selectedCustomer.name}</b></p>
+                                <p>Do you want to delete <b>{selected.title}</b></p>
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal"
                                         onClick={handleClose}>Close
                                 </button>
                                 <button type="button" className="btn btn-primary"
-                                        onClick={() => handleDelete(selectedCustomer)}>Delete
+                                        onClick={() => handleDelete(selected)}>Delete
                                 </button>
                             </div>
                         </div>

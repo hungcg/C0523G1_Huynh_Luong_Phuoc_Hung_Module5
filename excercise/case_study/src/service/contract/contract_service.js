@@ -1,9 +1,9 @@
 
 import axios from "axios";
 
-export  const findAll = async()=>{
+export  const findAll = async(bookingCode)=>{
     try{
-        let response =await  axios.get("http://localhost:8080/contract")
+        let response =await  axios.get(`http://localhost:8080/contract?code_like=${bookingCode}`)
         return response.data
     }catch (e) {
 

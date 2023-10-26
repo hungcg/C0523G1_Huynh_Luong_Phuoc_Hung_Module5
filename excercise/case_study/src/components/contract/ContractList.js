@@ -8,13 +8,14 @@ export function ContractList() {
     const [contract, setContract] = useState([])
     const [modalStatus, setModalStatus] = useState(false);
     const [selectedContract, setSelectedContract] = useState()
+    const[bookingCode,setBookingCode]=useState("")
     useEffect(()=>{
         findAll()
 
-    },[])
+    },[bookingCode])
 
     const  findAll = async ()=>{
-        let data = await contractService.findAll();
+        let data = await contractService.findAll(bookingCode);
         setContract(data)
     }
     const deleteModal = (contract) => {
@@ -39,6 +40,9 @@ export function ContractList() {
                                     <button style={{position:"relative" ,top:"10px",left:"730px"}} className="btn"><i className="animation"></i>New Create<i className="animation"></i>
                                     </button>
                                 </Link>
+                            </div>
+                            <div>
+                                <input type="text" onChange={(values)=> setBookingCode(values.target.value)} placeholder="search by booking code" style={{position:"relative", right:"550px",borderRadius:"10px",marginBottom:"20px"}} />
                             </div>
                             <div className="table-responsive table--no-card m-b-40">
                                 <table id="bang" className="table table-borderless table-striped table-earning">
@@ -65,7 +69,7 @@ export function ContractList() {
                                             <td>{contract.deposit}</td>
                                             <td>{contract.total}</td>
                                             <td>
-                                                <Link to={`/contract/edit/${contract.id}`} >
+                                                <Link to={`/contract/edit/${contract.id}`} style={{textDecoration: "none"}} >
                                                 <button className="edit-button">
                                                     <svg className="edit-svgIcon" viewBox="0 0 512 512">
                                                         <path

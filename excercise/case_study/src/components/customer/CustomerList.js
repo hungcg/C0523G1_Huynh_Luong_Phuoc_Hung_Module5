@@ -9,12 +9,15 @@ export function CustomerList() {
     const [customer, setCustomer] = useState([])
     const [modalStatus, setModalStatus] = useState(false);
     const [selectedCustomer, setSelectedCustomer] = useState()
+    const[customerName, setCustomerName] = useState("")
+    const[customerType, setCustomerType] = useState("")
+
     useEffect(() => {
         findAll()
-    }, [])
+    }, [customerName,customerType])
 
     const findAll = async () => {
-        let data = await customerService.findAll();
+        let data = await customerService.findAll(customerName,customerType);
         setCustomer(data);
     }
     const deleteModal = (customer) => {
@@ -27,6 +30,7 @@ export function CustomerList() {
         setSelectedCustomer(null);
         setModalStatus(false);
     }
+
 
 
     return (
@@ -42,6 +46,10 @@ export function CustomerList() {
                                         <i className="animation"></i>New Create<i className="animation"></i>
                                     </button>
                                 </Link>
+                            </div>
+                            <div style={{position:"relative", right:"550px"}}>
+                                <input style={{marginBottom:"5px",borderRadius:"10px"}} placeholder="search by Name" type="text" onChange={(values)=> setCustomerName(values.target.value)}/><br/>
+                                <input style={{marginBottom:"5px",borderRadius:"10px"}} placeholder="search by Customer type" type="text" onChange={(values)=> setCustomerType(values.target.value)}/>
                             </div>
 
                             <div className="table-responsive table--no-card m-b-40">
@@ -73,9 +81,9 @@ export function CustomerList() {
                                             <td>{customer.address}</td>
                                             <td>{customer.phoneNumber}</td>
                                             <td>{customer.email}</td>
-                                            <td>{customer.type}</td>
+                                            <td>{customer.type.name}</td>
                                             <td>
-                                                <Link to={`/customer/edit/${customer.id}`}>
+                                                <Link to={`/customer/edit/${customer.id}`} style={{textDecoration: "none"}}>
                                                 <button className="edit-button">
                                                     <svg className="edit-svgIcon" viewBox="0 0 512 512">
                                                         <path

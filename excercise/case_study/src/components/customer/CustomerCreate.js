@@ -4,10 +4,24 @@ import * as customerService from "../../service/customer/customer_service"
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import * as Yup from "yup";
+import {useEffect, useState} from "react";
+import {type} from "@testing-library/user-event/dist/type";
 
 export function CustomerCreate() {
     const navigate = useNavigate();
-    const createCustomer = async (data) => {
+    const [customerTypes, setCustomerTypes] = useState([])
+    const [customer, setCustomer] = useState([])
+
+    useEffect(() => {
+        findAll()
+    }, [])
+
+    const findAll = async () => {
+        let data = await customerService.findAllType();
+        setCustomerTypes(data);
+    }
+    const createCustomer = async (customer) => {
+        const data = {...customer, type: JSON.parse(customer.type)};
         console.log("OK")
         const status = await customerService.createCustomer(data)
         console.log(status)
@@ -28,7 +42,10 @@ export function CustomerCreate() {
                 idCard: "",
                 phoneNumber: "",
                 email: "",
-                type: "",
+                type: JSON.stringify({
+                    "id": 5,
+                    "name": "Diamond"
+                }),
                 address: ""
             }} onSubmit={(values) => {
                 createCustomer(values)
@@ -110,7 +127,6 @@ export function CustomerCreate() {
                         <div className="col-md-6">
 
 
-
                             <div className="mb-3">
                                 <label htmlFor="idCard" className="form-label">
                                     ID Card
@@ -137,52 +153,11 @@ export function CustomerCreate() {
                             <div className="mb-3">
                                 <label className="form-label">Customer Type</label>
                                 <div className="form-check">
-                                    <Field
-                                        type="radio"
-                                        name="type"
-                                        id="customerType1"
-                                        value="Diamond"
-                                        className="form-check-input"
-                                    />
-                                    <label htmlFor="customerType1" className="form-check-label">
-                                        Diamond
-                                    </label>
-                                </div>
-                                <div className="form-check">
-                                    <Field
-                                        type="radio"
-                                        name="type"
-                                        id="customerType2"
-                                        value="Platinum"
-                                        className="form-check-input"
-                                    />
-                                    <label htmlFor="customerType2" className="form-check-label">
-                                        Platinum
-                                    </label>
-                                </div>
-                                <div className="form-check">
-                                    <Field
-                                        type="radio"
-                                        name="type"
-                                        id="customerType3"
-                                        value="Silver"
-                                        className="form-check-input"
-                                    />
-                                    <label htmlFor="customerType3" className="form-check-label">
-                                        Silver
-                                    </label>
-                                </div>
-                                <div className="form-check">
-                                    <Field
-                                        type="radio"
-                                        name="type"
-                                        id="customerType4"
-                                        value="Member"
-                                        className="form-check-input"
-                                    />
-                                    <label htmlFor="customerType4" className="form-check-label">
-                                        Member
-                                    </label>
+                                    <Field as="select" name="type" className="form-check-input">
+                                        {customerTypes.map(type => (
+                                            <option key={type.id} value={JSON.stringify(type)}>{type.name}</option>
+                                        ))}
+                                    </Field>
                                 </div>
                             </div>
                         </div>
