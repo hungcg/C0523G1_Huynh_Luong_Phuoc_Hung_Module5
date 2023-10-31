@@ -1,0 +1,90 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Coca",
+      "price": 20000,
+      "type": {
+        "id": 2,
+        "name": "Drink"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Pepsi",
+      "price": 20000,
+      "type": {
+        "id": 2,
+        "name": "Drink"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Choco-pie",
+      "price": 20000,
+      "type": {
+        "id": 1,
+        "name": "Food"
+      }
+    },
+    {
+      "name": "Heineken",
+      "price": "100000",
+      "type": {
+        "id": 2,
+        "name": "Drink"
+      },
+      "id": 8
+    },
+    {
+      "name": "Bánh cuốn",
+      "price": "1000000",
+      "type": {
+        "id": 1,
+        "name": "Food"
+      },
+      "id": 9
+    },
+    {
+      "name": "Bún chả",
+      "price": "100000",
+      "type": {
+        "id": 1,
+        "name": "Food"
+      },
+      "id": 10
+    },
+    {
+      "name": "Larue",
+      "price": "100000",
+      "type": {
+        "id": 1,
+        "name": "Food"
+      },
+      "id": 11
+    },
+    {
+      "name": "Xôi gà",
+      "price": "100000",
+      "type": {
+        "id": 1,
+        "name": "Food"
+      },
+      "id": 12
+    }
+  ],
+  "type": [
+    {
+      "id": 1,
+      "name": "Food"
+    },
+    {
+      "id": 2,
+      "name": "Drink"
+    },
+    {
+      "id": 3,
+      "name": "Alcohol"
+    }
+  ]
+}

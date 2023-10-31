@@ -22,7 +22,7 @@ export function CustomerCreate() {
     }
     const createCustomer = async (customer) => {
         const data = {...customer, type: JSON.parse(customer.type)};
-        console.log("OK")
+        console.log(data)
         const status = await customerService.createCustomer(data)
         console.log(status)
         if (status === 201) {
@@ -42,32 +42,41 @@ export function CustomerCreate() {
                 idCard: "",
                 phoneNumber: "",
                 email: "",
-                type: JSON.stringify({
-                    "id": 5,
-                    "name": "Diamond"
-                }),
-                address: ""
-            }} onSubmit={(values) => {
-                createCustomer(values)
-            }} validationSchema={Yup.object({
-                name: Yup.string()
-                    .required("Not Empty")
-                    .matches(/^[A-Z][a-z]+(\s[A-Z][a-z]+)+$/, "Must Upper the first letter"),
-                dateOfBirth: Yup.string()
-                    .required("Not Empty"),
-                idCard: Yup.string()
-                    .required("Not Empty")
-                    .matches(/^\d{9}|\d{12}$/, "9 or 12 numbers"),
-                phoneNumber: Yup.string()
-                    .required("Not Empty")
-                    .matches(/^(?:\(\d+\)\+)?(09[01]\d{7}|(84)\+09[01]\d{7})$/, "The phone number must be " +
-                        "in the correct format 090xxxxxxx or 091xxxxxxx or (84)+90xxxxxxx or (84)+91xxxxxxx"),
-                address: Yup.string()
-                    .required("Not Empty"),
-                email: Yup.string()
-                    .required("Email is required")
-                    .matches(/^[\w\-.]+@([\w-]+\.)+[\w-]{2,}$/, "Invalid email address"),
-            })}
+                type: JSON.stringify(
+                    {
+                        id: 5,
+                        name: "Diamond"
+                    },
+                ),
+                address: "",
+                gender: "0"
+            }}
+                    onSubmit={(values) => {
+                        createCustomer(values)
+                    }}
+                    validationSchema={Yup.object({
+                        name: Yup.string()
+                            .required("Not Empty")
+                            .matches(/^[A-Z][a-z]+(\s[A-Z][a-z]+)+$/, "Must Upper the first letter"),
+                        dateOfBirth: Yup.string()
+                            .required("Not Empty"),
+                        idCard: Yup.string()
+                            .required("Not Empty")
+                            .matches(/^\d{9}|\d{12}$/, "9 or 12 numbers"),
+                        phoneNumber: Yup.string()
+                            .required("Not Empty")
+                            .matches(/^(?:\(\d+\)\+)?(09[01]\d{7}|(84)\+09[01]\d{7})$/, "The phone number must be " +
+                                "in the correct format 090xxxxxxx or 091xxxxxxx or (84)+90xxxxxxx or (84)+91xxxxxxx"),
+                        address: Yup.string()
+                            .required("Not Empty"),
+                        email: Yup.string()
+                            .required("Email is required")
+                            .matches(/^[\w\-.]+@([\w-]+\.)+[\w-]{2,}$/, "Invalid email address"),
+                        type: Yup.string()
+                            .required("required"),
+                        gender: Yup.string()
+                            .min(0, "required")
+                    })}
             >
                 <Form className="container" style={{marginTop: "120px"}}>
                     <div className="row">
@@ -100,8 +109,7 @@ export function CustomerCreate() {
                                     <Field
                                         type="radio"
                                         name="gender"
-                                        id="gender1"
-                                        value="Male"
+                                        value="1"
                                         className="form-check-input"
                                     />
                                     <label htmlFor="gender1" className="form-check-label">
@@ -112,8 +120,7 @@ export function CustomerCreate() {
                                     <Field
                                         type="radio"
                                         name="gender"
-                                        id="gender2"
-                                        value="Female"
+                                        value="0"
                                         className="form-check-input"
                                     />
                                     <label htmlFor="gender2" className="form-check-label">
@@ -153,11 +160,12 @@ export function CustomerCreate() {
                             <div className="mb-3">
                                 <label className="form-label">Customer Type</label>
                                 <div className="form-check">
-                                    <Field as="select" name="type" className="form-check-input">
+                                    <Field as="select" name="type" cclassName="form-control">
                                         {customerTypes.map(type => (
                                             <option key={type.id} value={JSON.stringify(type)}>{type.name}</option>
                                         ))}
                                     </Field>
+                                    <ErrorMessage name="type" component="div" className="text-danger"/>
                                 </div>
                             </div>
                         </div>

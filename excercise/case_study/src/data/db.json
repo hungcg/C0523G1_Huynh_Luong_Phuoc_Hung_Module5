@@ -1,14 +1,6 @@
 {
   "contract": [
     {
-      "id": 1,
-      "code": "BK-001",
-      "startDate": "2023-10-21",
-      "finishDate": "2023-10-10",
-      "deposit": 2000000,
-      "total": 2500000000
-    },
-    {
       "id": 2,
       "code": "BK-002",
       "startDate": "22-01-2002",
@@ -45,7 +37,7 @@
         "name": "Diamond"
       },
       "address": "Argentina",
-      "gender": "Male",
+      "gender": 1,
       "id": 14
     },
     {
@@ -59,7 +51,7 @@
         "name": "Diamond"
       },
       "address": "Spain",
-      "gender": "Male",
+      "gender": 1,
       "id": 15
     },
     {
@@ -73,7 +65,7 @@
         "name": "Diamond"
       },
       "address": "EngLand",
-      "gender": "Female",
+      "gender": 1,
       "id": 16
     },
     {
@@ -101,7 +93,7 @@
         "name": "Platinum"
       },
       "address": "czxczxceqweqweqwe",
-      "gender": "Male",
+      "gender": 0,
       "id": 19
     }
   ],

@@ -31,6 +31,7 @@ export function CustomerList() {
         setModalStatus(false);
     }
 
+    if(!customer){return  null;}
 
 
     return (
@@ -81,7 +82,7 @@ export function CustomerList() {
                                             <td>{customer.address}</td>
                                             <td>{customer.phoneNumber}</td>
                                             <td>{customer.email}</td>
-                                            <td>{customer.type.name}</td>
+                                            <td>{customerType.name}</td>
                                             <td>
                                                 <Link to={`/customer/edit/${customer.id}`} style={{textDecoration: "none"}}>
                                                 <button className="edit-button">

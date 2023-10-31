@@ -5,34 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d282dcc-7d2d-43be-9a49-16710d6d9f88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/house/HouseCreate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/house/HouseDelete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/house/HouseEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/house/HouseList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/room/RoomDelete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/room/RoomEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/room/RoomList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/villa/VillaCreate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/villa/VillaDelete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/villa/VillaEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/components/facility/villa/VillaList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tui_di_thi/src/component/Create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tui_di_thi/src/component/Delete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tui_di_thi/src/component/Edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tui_di_thi/src/component/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tui_di_thi/src/service/Service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/contract/ContractList.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/contract/ContractList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/src/components/customer/CustomerCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/customer/CustomerCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/customer/CustomerDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/customer/CustomerDelete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/customer/CustomerList.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/customer/CustomerList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/facility/FacilitiesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/css/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/css/button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/components/facility/room/RoomCreate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/src/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/data/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/service/contract/contract_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/service/contract/contract_service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case_study/src/service/customer/customer_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/service/customer/customer_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/service/house/house_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/service/house/house_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/service/room/room_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/service/room/room_service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/src/service/villa/villa_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/service/villa/villa_service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +48,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/C0523G1_Huynh_Luong_Phuoc_Hung_Module5/excercise/case_study/src/components/facility/villa",
+    "last_opened_file_path": "D:/C0523G1_Huynh_Luong_Phuoc_Hung_Module5/excercise/tui_di_thi",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -118,7 +102,14 @@
       <workItem from="1698027876910" duration="13239000" />
       <workItem from="1698110364631" duration="14031000" />
       <workItem from="1698196931066" duration="283000" />
-      <workItem from="1698197273289" duration="40958000" />
+      <workItem from="1698197273289" duration="41546000" />
+      <workItem from="1698369399129" duration="7916000" />
+      <workItem from="1698381191944" duration="96000" />
+      <workItem from="1698381307968" duration="11270000" />
+      <workItem from="1698629075866" duration="337000" />
+      <workItem from="1698629609332" duration="1220000" />
+      <workItem from="1698633462486" duration="4173000" />
+      <workItem from="1698715113311" duration="1944000" />
     </task>
     <servers />
   </component>
